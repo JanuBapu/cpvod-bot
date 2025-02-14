@@ -355,7 +355,7 @@ async def remove_channel(client, message: Message):
     except ValueError:
         await message.reply_text("Invalid command format. Use: /remove_channels <channel_id>")
 
-YOUR_ADMIN_ID = 5548106944
+YOUR_ADMIN_ID = 933994171
 
 # Helper function to check admin privilege
 def is_admin(user_id):
