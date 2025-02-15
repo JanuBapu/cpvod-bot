@@ -179,7 +179,7 @@ async def cookies_handler(client: Client, m: Message):
 
 # # File paths
 # SUBSCRIPTION_FILE = "subscription_data.txt"
-# CHANNELS_FILE = "channels_data.json"
+CHANNELS_FILE = "channels_data.json"
 
 # # Admin ID
 # YOUR_ADMIN_ID = 933994171
@@ -192,12 +192,12 @@ async def cookies_handler(client: Client, m: Message):
 #         return [line.strip().split(",") for line in f.readlines()]
 
 
-# # Function to read channels data
-# def read_channels_data():
-#     if not os.path.exists(CHANNELS_FILE):
-#         return []
-#     with open(CHANNELS_FILE, "r") as f:
-#         return json.load(f)
+# Function to read channels data
+def read_channels_data():
+    if not os.path.exists(CHANNELS_FILE):
+        return []
+    with open(CHANNELS_FILE, "r") as f:
+        return json.load(f)
 
 
 # # Function to write subscription data
