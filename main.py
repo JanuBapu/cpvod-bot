@@ -227,9 +227,9 @@ async def guide_handler(client: Client, message: Message):
 #         "📖 **Usage**:\n\n"
 #         "1. `/add_channel -100{channel_id}` - Add a channel to the bot.\n"
 #         "2. `/remove_channel -100{channel_id}` - Remove a channel from the bot.\n"
-        "1. `/start` file command - Process the start bot.\n"
-        "1. `/rose` file command - Process the .txt file.\n"
-        "2. `/stop` - Stop the task running in the bot. 🚫\n\n"
+        "1. /start file command - Process the start bot.\n"
+        "1. /rose file command - Process the .txt file.\n"
+        "2. /stop - Stop the task running in the bot. 🚫\n\n"
         "If you have any questions, feel free to ask! 💬"
     )
     await message.reply_text(guide_text)
