@@ -567,6 +567,10 @@ async def rose_handler(client: Client, m: Message):
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
             name = f'{str(count).zfill(3)}) {name1[:60]}'
 
+            if 'media-cdn.classplusapp.com/drm' in url:
+                id =  url.split("/")[-2]
+                url =  "https://extractapi.vercel.app/classplus?link=https://media-cdn.classplusapp.com/drm/" + id + "/playlist.m3u8"
+
             if 'testbook' in url:
                 id =  url.split("/")[-2]
                 url =  "https://extractapi.vercel.app/classplus?link=https://cpvod.testbook.com/" + id + "/playlist.m3u8"
