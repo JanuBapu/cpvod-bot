@@ -116,7 +116,7 @@ async def start_command(bot: Client, message: Message):
         "➠ **Can Extract Videos & PDFs From Your Text File and Upload to Telegram!**\n"
         "➠ **For Guide Use Command /guide 📖**\n\n"
         "➠ **Use /rose Command to Download From TXT File** 📄\n\n"
-        "➠ **𝐌𝐚𝐝𝐞 𝐁𝐲:** @blazee🩷"
+        "➠ **𝐌𝐚𝐝𝐞 𝐁𝐲:** Blazee🩷"
     )
 
     # Send the image with caption and buttons
@@ -511,7 +511,7 @@ async def rose_handler(client: Client, m: Message):
     # Default credit message
     credit = "️ ⁪⁬⁮⁮⁮"
     if raw_text3 == 'de':
-        CR = '@blazee🩷'
+        CR = 'Blazee🩷'
     elif raw_text3:
         CR = raw_text3
     else:
