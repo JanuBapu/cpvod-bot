@@ -68,11 +68,11 @@ import random
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="https://t.me/sanjaykagra86"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/SSC_Aspirants_7"),
+            InlineKeyboardButton(text="📞 Contact", url="https://www.google.com/"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://www.google.com/"),
         ],
         [
-            InlineKeyboardButton(text="🪄 Updates Channel", url="https://t.me/SSC_Aspirants_7"),
+            InlineKeyboardButton(text="🪄 Updates Channel", url="https://www.google.com/"),
         ],
     ]
 )
@@ -81,11 +81,12 @@ keyboard = InlineKeyboardMarkup(
 Busy = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="https://t.me/sanjaykagra86"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/SSC_Aspirants_7"),
+            InlineKeyboardButton(text="📞 start", url="/start"),
+            InlineKeyboardButton(text="📞 Contact", url="https://www.google.com/"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://www.google.com/"),
         ],
         [
-            InlineKeyboardButton(text="🪄 Updates Channel", url="https://t.me/SSC_Aspirants_7"),
+            InlineKeyboardButton(text="🪄 Updates Channel", url="https://www.google.com/"),
         ],
     ]
 )
@@ -120,7 +121,7 @@ async def start_command(bot: Client, message: Message):
         "➠ **𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐖𝐢𝐭𝐡 ♥️**\n"
         "➠ **Can Extract Videos & PDFs From Your Text File and Upload to Telegram!**\n"
         "➠ **For Guide Use Command /guide 📖**\n\n"
-        "➠ **Use /moni Command to Download From TXT File** 📄\n\n"
+        "➠ **Use /rose Command to Download From TXT File** 📄\n\n"
         "➠ **𝐌𝐚𝐝𝐞 𝐁𝐲:** @blazee🩷"
     )
 
@@ -232,7 +233,7 @@ def read_channels_data():
 #         "📖 **Usage**:\n\n"
 #         "1. `/add_channel -100{channel_id}` - Add a channel to the bot.\n"
 #         "2. `/remove_channel -100{channel_id}` - Remove a channel from the bot.\n"
-#         "3. `/moni .txt` file command - Process the .txt file.\n"
+#         "3. `/rose .txt` file command - Process the .txt file.\n"
 #         "4. `/stop` - Stop the task running in the bot. 🚫\n\n"
 #         "If you have any questions, feel free to ask! 💬"
 #     )
@@ -409,8 +410,8 @@ def read_channels_data():
 #     await message.reply_text("♦️ 𝐒𝐭𝐨𝐩𝐩𝐞𝐝 ♦️" , True)
 #     os.execl(sys.executable, sys.executable, *sys.argv)
 
-@bot.on_message(filters.command("moni"))
-async def moni_handler(client: Client, m: Message):
+@bot.on_message(filters.command("rose"))
+async def rose_handler(client: Client, m: Message):
     if m.chat.type == "private":
         user_id = str(m.from_user.id)
         # subscription_data = read_subscription_data()
@@ -515,7 +516,7 @@ async def moni_handler(client: Client, m: Message):
     # Default credit message
     credit = "️ ⁪⁬⁮⁮⁮"
     if raw_text3 == 'de':
-        CR = '@SanjayKagra86🩷'
+        CR = '@blazee🩷'
     elif raw_text3:
         CR = raw_text3
     else:
@@ -623,8 +624,8 @@ async def moni_handler(client: Client, m: Message):
                      
             try:  
                 
-                cc = f'**🎥 VIDEO ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} ⎳𝓸𝓿𝓮❥❤️━━╬٨ﮩSanju٨ـﮩـ Love❥.mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
-                cc1 = f'**📁 FILE ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} 𝄟✮͢🦋⃟≛⃝m✮⃝oni.pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
+                cc = f'**🎥 VIDEO ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} .mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
+                cc1 = f'**📁 FILE ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} .pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
                                  
                 
                 if "drive" in url:
@@ -680,7 +681,7 @@ async def moni_handler(client: Client, m: Message):
                           
                 else:
                     Show = f"❊⟱ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 ⟱❊ »\n\n📄 Title:- `{name}\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`"
-                    prog = await m.reply_text(f"**Downloading:-**\n\n**📄 Title:-** `{name}\n\nQuality - {raw_text2}`\n\n**Link:**`{url}`\n\n**Bot Made By SanjaKagra86🩷 **")
+                    prog = await m.reply_text(f"**Downloading:-**\n\n**📄 Title:-** `{name}\n\nQuality - {raw_text2}`\n\n**Link:**`{url}`\n\n**Bot Made By Rose🩷 **")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
