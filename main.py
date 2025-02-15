@@ -224,20 +224,20 @@ def read_channels_data():
 #     return wrapper
 
 # # How to use:-
-# @bot.on_message(filters.command("guide"))
-# async def guide_handler(client: Client, message: Message):
-#     guide_text = (
+@bot.on_message(filters.command("guide"))
+async def guide_handler(client: Client, message: Message):
+    guide_text = (
 #         "🔑 **How to get started with Premium**:\n\n"
 #         "1. **First of all**, contact the owner and buy a premium plan. 💰\n"
 #         "2. **If you are a premium user**, you can check your plan by using `/myplan`. 🔍\n\n"
 #         "📖 **Usage**:\n\n"
 #         "1. `/add_channel -100{channel_id}` - Add a channel to the bot.\n"
 #         "2. `/remove_channel -100{channel_id}` - Remove a channel from the bot.\n"
-#         "3. `/rose .txt` file command - Process the .txt file.\n"
-#         "4. `/stop` - Stop the task running in the bot. 🚫\n\n"
-#         "If you have any questions, feel free to ask! 💬"
-#     )
-#     await message.reply_text(guide_text)
+        "1. `/rose` file command - Process the .txt file.\n"
+        "2. `/stop` - Stop the task running in the bot. 🚫\n\n"
+        "If you have any questions, feel free to ask! 💬"
+    )
+    await message.reply_text(guide_text)
 
 # # 1. /adduser
 # @bot.on_message(filters.command("adduser") & filters.private)
@@ -393,10 +393,10 @@ def read_channels_data():
 
 
 # # 6. /stop
-# @bot.on_message(filters.command("stop"))
-# async def stop_handler(client, message: Message):
-#     if message.chat.type == "private":
-#         user_id = str(message.from_user.id)
+@bot.on_message(filters.command("stop"))
+async def stop_handler(client, message: Message):
+    if message.chat.type == "private":
+        user_id = str(message.from_user.id)
 #         subscription_data = read_subscription_data()
 #         if not any(user[0] == user_id for user in subscription_data):
 #             await message.reply_text("😔 You are not a premium user. Please subscribe to get access! 🔒")
@@ -407,8 +407,8 @@ def read_channels_data():
 #             await message.reply_text("🚫 You are not a premium user. Subscribe to unlock all features! ✨")
 #             return
 
-#     await message.reply_text("♦️ 𝐒𝐭𝐨𝐩𝐩𝐞𝐝 ♦️" , True)
-#     os.execl(sys.executable, sys.executable, *sys.argv)
+    await message.reply_text("♦️ 𝐒𝐭𝐨𝐩𝐩𝐞𝐝 ♦️" , True)
+    os.execl(sys.executable, sys.executable, *sys.argv)
 
 @bot.on_message(filters.command("rose"))
 async def rose_handler(client: Client, m: Message):
