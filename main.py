@@ -82,8 +82,7 @@ Busy = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(text="📞 start", url="/start"),
-            InlineKeyboardButton(text="📞 Contact", url="https://www.google.com/"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://www.google.com/"),
+            InlineKeyboardButton(text="🛠️ Help", url="/guide"),
         ],
         [
             InlineKeyboardButton(text="🪄 Updates Channel", url="https://www.google.com/"),
@@ -93,13 +92,7 @@ Busy = InlineKeyboardMarkup(
 
 # Image URLs for the random image feature
 image_urls = [
-    "https://i.ibb.co/dpRKmmj/file-3957.jpg",
-    "https://i.ibb.co/NSbPQ5n/file-3956.jpg",
-    "https://i.ibb.co/Z8R4z0g/file-3962.jpg",
-    "https://i.ibb.co/LtqjVy7/file-3958.jpg",
-    "https://i.ibb.co/bm20zfd/file-3959.jpg",
-    "https://i.ibb.co/0V0BngV/file-3960.jpg",
-    "https://i.ibb.co/rQMXQjX/file-3961.jpg",
+    "https://wallpapersmug.com/download/1024x768/0469ff/hero-iron-man-minimalist.jpg",
     # Add more image URLs as needed
 ]
 
@@ -233,6 +226,7 @@ async def guide_handler(client: Client, message: Message):
 #         "📖 **Usage**:\n\n"
 #         "1. `/add_channel -100{channel_id}` - Add a channel to the bot.\n"
 #         "2. `/remove_channel -100{channel_id}` - Remove a channel from the bot.\n"
+        "1. `/start` file command - Process the start bot.\n"
         "1. `/rose` file command - Process the .txt file.\n"
         "2. `/stop` - Stop the task running in the bot. 🚫\n\n"
         "If you have any questions, feel free to ask! 💬"
