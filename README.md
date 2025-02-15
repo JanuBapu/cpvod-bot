@@ -82,7 +82,7 @@ before Deploying Change your Credentials in Vars.py
 
 ```
 sudo apt update && sudo apt upgrade
-git clone https://github.com/Sumit-Anand3098/cpvod-bot
+git clone https://github.com/blazeework/cpvod-bot
 cd cpvod-bot
 pip3 install -r requirements.txt
 next required for video conversion on linux
