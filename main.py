@@ -68,8 +68,8 @@ import random
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="https://www.google.com/"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://www.google.com/"),
+            InlineKeyboardButton(text="📞 start", url="/start"),
+            InlineKeyboardButton(text="🛠️ Help", url="/guide"),
         ],
         [
             InlineKeyboardButton(text="🪄 Updates Channel", url="https://www.google.com/"),
@@ -80,13 +80,15 @@ keyboard = InlineKeyboardMarkup(
 # Inline keyboard for busy status
 Busy = InlineKeyboardMarkup(
     [
-        [
-            InlineKeyboardButton(text="📞 start", url="/start"),
-            InlineKeyboardButton(text="🛠️ Help", url="/guide"),
+[
+            InlineKeyboardButton(text="📞 Contact", url="https://www.google.com/"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://www.google.com/"),
         ],
         [
             InlineKeyboardButton(text="🪄 Updates Channel", url="https://www.google.com/"),
         ],
+
+        
     ]
 )
 
